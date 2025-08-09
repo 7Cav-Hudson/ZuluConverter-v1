@@ -54,9 +54,8 @@ p.sub{margin:0 0 14px; color:#cbd5e1; font-size:.95rem}
   display:grid;
   gap:14px;
   align-items:start;
-  grid-template-columns: 0.9fr 0.7fr 1.4fr; /* let them shrink */
+  grid-template-columns: 0.9fr 0.7fr 1.4fr;
 }
-/* allow grid children to actually shrink */
 .field{
   min-width:0;
   display:flex;
@@ -75,14 +74,14 @@ p.sub{margin:0 0 14px; color:#cbd5e1; font-size:.95rem}
 }
 .label-row .label{ line-height:28px }
 .field .label-row{
-  height:28px;                      /* lock the row height */
+  height:28px;
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
-.field .label{ line-height:28px }   /* vertically center text */
+.field .label{ line-height:28px }
 .mini-btn{
-  height:28px;                      /* match row height */
+  height:28px;
   line-height:28px;
   padding:0 10px;
 }
@@ -132,7 +131,7 @@ p.sub{margin:0 0 14px; color:#cbd5e1; font-size:.95rem}
 }
 .mini-btn:hover{filter:brightness(1.05)}
 
-/* Result + misc */
+/* Output text */
 .result{margin-top:16px; border:1px dashed rgba(148,163,184,.35); border-radius:12px; padding:14px; background:#0b1020}
 .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
 .err{color:var(--err); font-size:.92rem}
@@ -155,7 +154,7 @@ p.sub{margin:0 0 14px; color:#cbd5e1; font-size:.95rem}
 }
 .combo-header:first-child{ border-top:none; margin-top:0 }
 
-/* Tip + Footer */
+/* "Tip" & Footer */
 .tip-below{ width:min(780px,94vw); margin:6px 0 0; text-align:left }
 .site-footer{ width:100%; display:flex; justify-content:center; margin:8px 0 16px }
 .site-footer p{ font-size:10px; text-align:center; color:var(--muted); margin:0 }
@@ -164,7 +163,7 @@ p.sub{margin:0 0 14px; color:#cbd5e1; font-size:.95rem}
 .right{ text-align:right }
 .mt-10{ margin-top:10px }
 
-/* Links */
+/* Link colors */
 a:link, a:visited { color: #bbbbbb; text-decoration: none; }
 a:hover { color: var(--accent); text-decoration: underline; }
 a:active { color: #bbbbbb; text-decoration: underline; }

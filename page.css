@@ -173,3 +173,54 @@ a:active { color: #bbbbbb; text-decoration: underline; }
 @media (max-height: 700px){
   .center-wrap{ justify-content:flex-start; padding-top:24px; }
 }
+
+/* --- Mobile / small screens --- */
+@media (max-width: 700px){
+  body{ min-height: 100svh; }
+
+  .card{
+    width: min(780px, 94vw);
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+  h1{ font-size: 1.1rem; margin-bottom: 8px; }
+  p.sub{ font-size: .9rem; margin-bottom: 12px; }
+
+  .row{
+    grid-template-columns: 1fr;
+    gap: 12px;
+    align-items: start;
+  }
+
+  .field .label-row{ height: 32px; }
+  .label-row .label{ line-height: 32px }
+
+  .input, select{ height: 48px; font-size: 16px; }
+  .btn{ height: 48px; font-size: 16px; }
+  .mini-btn{ height: 32px; line-height: 32px; font-size: 14px; }
+
+  .seg{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px;
+  }
+  .seg label{
+    flex: 1 1 48%;
+    min-width: 0;
+    height: 40px;
+    padding: 0 10px;
+  }
+
+  .combo{ min-width: 0; width: 100%; }
+  .combo input{ min-width: 0; width: 100%; }
+  .combo-menu{
+    max-height: min(360px, 50vh);
+    overscroll-behavior: contain;
+    z-index: 100;
+  }
+
+  .tip-below{ margin-top: 8px; text-align: left; }
+  .site-header{ padding: 10px 12px; }
+}
